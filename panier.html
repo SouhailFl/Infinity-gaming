@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Shop</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="panier.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <a href="homepage.html"><img src="images/Infinity.png" alt="logo"></a>
+            </a>
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-items">
+                    <a href="Trending.html" class="nav-link ">Trending</a>
+                </li>
+                <li class="nav-items">
+                    <a href="homepage.html" class="nav-link ">Bestsellers</a>
+                </li>
+                <li class="nav-items">
+                    <a href="homepage.html" class="nav-link ">Categories</a>
+                </li>
+                <li class="nav-items">
+                    <a href="forum.html" class="nav-link ">Reviews</a>
+                </li>
+            </ul>
+            <div class="navbar-icons">
+              <a href="panier.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="login.html"><i class="fa-sharp fa-solid fa-right-to-bracket"></i></a>
+            </div>
+        </div>
+    </nav>
+</header>
+  <main>
+    <div class="container little-margin">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Add to Cart</h2>
+          <div class="card">
+            <div class="card-body cardi-b " id="cart-items-container">
+              <!-- Add your game cards here -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h2>Total Price</h2>
+          <div class="card">
+            <div class="card-body ">
+              <h3 class="black-font" id="cart-total-price">Cart Total: $0.00</h3>
+              <!-- Add the total price calculation here -->
+            </div>
+          </div>
+          <div class="mt-3 d-flex ">
+            <button type="button" class="btn btn-primary payment-button">Payment</button>
+          </div>
+        </div>
+        <!--           <div class="pay" >
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-bitcoin"></i>
+                  </div> -->
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary custom-btn" onclick="cleanCart()">Clean Cart</button>
+    <span style="color: var(--bg);" id="cart-counter">0</span>
+  </main>
+<footer class="">
+  <hr>
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-md-2 custom-column">
+          <h5>About Us</h5>
+          <p id="about-us">A small developper Team yet ready to bring you the most interactive and aesthetically pleasing & appealing website.</p>
+        </div>
+        <div class="col-md-2 custom-column ">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 custom-column">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li>Email : souhailfellaki@gmail.com</li>
+            <li>Phone : +212704126294</li>
+            <li>Address : Hay al amal, Sale, Morocco</li>
+          </ul>
+        </div>
+        <div class="col-md-2 custom-column ">
+          <h5>Follow Us</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://web.facebook.com/souhail.fellaki" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/souhail_fellaki" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/souhail_fl" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/souhail-fellaki-1b1759262" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+    </div>
+</footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/d0472a7d07.js" crossorigin="anonymous"></script>
+  <script src="panier.js" ></script>
+</body>
+</html>

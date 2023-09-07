@@ -1,0 +1,367 @@
+/* First Picking my colors */
+:root{
+    --text : #fcfbfe ;
+    --pb : #7837d3;
+    --sb : #46a6fa;
+    --acc :#4df7bd;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(90deg, #080011,#252050, #39115f, #252050, #080011);
+}
+footer{
+    background: linear-gradient(90deg, #080011,#252050, #39115f, #252050, #080011);
+}
+*{
+    color: var(--text);
+}
+nav{
+    height: 121px;
+    margin-left: -200px;
+    margin-right: 0;
+    
+}
+nav .container img{
+    width: 170px;
+}
+.nav-items{
+    padding-right: 70px;
+    font-weight: bold;
+    font-size: 19px;
+}
+.nav-items a:hover{
+    color: var(--acc);
+}
+nav .navbar-nav li a{
+    color: var(--text);
+}
+.navbar-icons{
+    margin-right: -150px;
+    font-size: 22px;
+    padding: 22px;
+    cursor: pointer;
+}
+.navbar-icons .fa-cart-plus{
+    padding: 10px;
+}
+.navbar-icons .fa-cart-plus:hover{
+    color: gold;
+}
+.navbar-icons .fa-right-to-bracket:hover{
+    color: var(--acc);
+}
+.nav-link:hover {
+    background: linear-gradient(90deg, #3b97ff, #e48bff);
+    padding: 8px 8px 8px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: -5px 5px 5px rgb(61, 122, 255),
+                -5px 5px 25px rgb(61, 161, 255),
+                -5px 5px 40px rgb(100, 74, 245),
+                -5px 5px 50px rgb(90, 61, 255),
+                -5px 5px 50px rgb(80, 127, 255);
+
+}
+.content{
+    display: flex;
+    padding-top: 85px;
+    flex-direction: column;
+}
+.box{width: 520px;
+    margin-left: 80px;
+    background: transparent;
+    background: rgba(0,0,0,.6);
+    box-sizing: border-box;
+    box-shadow: 15px 10px 4px rgba(0, 0, 0, 0.9);
+    box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.9);
+    box-shadow: 15px 10px 6px rgba(0, 0, 0, 0.9);
+    box-shadow: 15px 10px 7px rgba(0, 0, 0, 0.9);
+    box-shadow: 15px 10px 8px rgba(0, 0, 0, 0.9);
+  
+    
+    border-radius: 10px;}
+.cont h1,p{
+    width: 440px;
+    margin-left: 40px;
+}
+.btn{
+    margin-left: 40px;
+}
+section video{
+    z-index: -1;/* send it the back of elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* object fit a new property */
+}
+.cont h1{
+    font-weight: 900;
+    line-height: 3rem;
+}
+.game-card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: var(--bg);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+                5px 5px 20px rgba(0, 0, 0, 0.1),
+                5px 5px 30px rgba(0, 0, 0, 0.1),
+                5px 5px 30px rgba(0, 0, 0, 0.1),
+                5px 5px 30px rgba(0, 0, 0, 0.1),
+                5px 5px 40px rgba(0, 0, 0, 0.1),
+                5px 5px 40px rgba(0, 0, 0, 0.1),
+                5px 5px 40px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+} 
+.preview-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0; /* Initially hide the video */
+    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+.game-card:hover .preview-video {
+    opacity: 1; /* Show the video on hover */
+}
+
+.game-card-bestsellers{
+    width: 355px;
+    height: 200px;
+}
+.game-card-bestsellers img{
+    width: 100%;
+    object-fit: cover;
+}
+.game-card-bestsellers:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.game-Categories{
+    width: 355px;
+    height: 180px;
+    cursor: pointer;
+
+}
+.game-Categories:hover{
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.game-Categories img:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-out ;
+
+}
+.game-card img {
+    width: 100%;
+    /* height: 100%; */
+    display: block;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+.game-details {
+    padding: 10px;
+}
+.game-details h3 {
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+.game-details p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: #777;
+}
+.game-details .price {
+    font-weight: bold;
+    color: var(--pb);
+}
+.game-details .buy-btn {
+    margin-top: 10px;
+    
+}
+.game-details .buy-btn a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--sb);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.game-details .buy-btn a:hover {
+    background-color: var(--pb);
+}
+main{
+    padding-top: 200px ;
+}
+.row-gap {
+    margin-bottom: 70px; /* does add a bottom margin for the gap between rows */
+    overflow-x: hidden;
+}
+.row-gap-2{
+    margin-bottom: 10px; /* does add a bottom margin for the gap between rows */
+    overflow-x: hidden;
+}
+.row-gap-3{
+    margin-top: 50px; /* does add a bottom margin for the gap between rows */
+    margin-bottom: 100px; /* does add a bottom margin for the gap between rows */
+    overflow-x: hidden;
+}
+#xxx{
+    margin-top: 50px;
+}
+.card-gap {
+    margin-right: 37px; /* so we can Adjust the margin as needed */
+}
+.card-gap-2 {
+    margin-right: 190px; /* so we can Adjust the margin as needed */
+}
+.card-gap-3{
+    margin-right: 95px; /* so we can Adjust the margin as needed */
+
+}
+.row-gap .col-md-2:last-child .game-card {
+    margin-right: 0;
+}
+.first-title h1{
+    margin-left: 40px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+.Trend{
+    display: flex;
+    cursor: pointer;
+}
+.Trend h2{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.Trend .fa-arrow-right{
+    padding-left: 18px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+.game-reviews{
+    cursor: pointer;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.game-reviews img {
+    width: 100%;
+    object-fit: cover;
+}
+.stars{
+    margin-top: 10px;
+    margin-left: 45px;
+    display: flex;
+}
+#gold-star{
+    color: gold;
+    
+}
+.game-details-2 {
+    padding: 10px;
+}
+.game-details-2 h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 50px;
+    padding: 0;
+    margin-bottom: 5px;
+    color: var(--acc);
+
+}
+.game-details-2 p {
+    font-size: 14px;
+    width: 200px;
+    margin-left: -10px;
+    padding: 0;
+    color: var(--text);
+    text-align: center;
+}
+.text-light{
+    background-color: var(--sb);
+}
+html, body {
+    height: 100%;
+}
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    flex-grow: 1;
+}
+.custom-column {
+    margin-left: 100px; /* Adjust the margin as needed */
+}
+#about-us{
+    width: 200px;
+    margin-left: 1px;
+}
+footer{
+    background-color: var(--bg);
+}
+.container-fluid h5{
+    font-weight: bold;
+    color: var(--pb);
+}
+.list-unstyled a{
+    text-decoration: none;
+    color: var(--acc);
+    font-weight: bold;
+}
+.link{
+    text-decoration: none;
+}
+.game-cardss {
+    transition: transform 0.3s ease;
+}
+.game-cardss:hover {
+    transform: scale(1.05);
+}
+s {
+    color: #888; /* Change the color to a subdued gray */
+    font-size: 0.9em; /* Reduce the font size slightly */
+  }
+s, strike{text-decoration:none;position:relative;}
+s::before, strike::before {
+    top: 50%; /*tweak this to adjust the vertical position if it's off a bit due to your font family */
+    background:red; /*this is the color of the line*/
+    opacity:.7;
+    content: '';
+    width: 110%;
+    position: absolute;
+    height:.1em;
+    border-radius:.1em;
+    left: -5%;
+    white-space:nowrap;
+    display: block;
+    transform: rotate(-15deg);  
+}
+s.straight::before, strike.straight::before{transform: rotate(0deg);left:-1%;width:102%;}
+
+h1,h2,h3,h5,ul,i,p{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5),
+                 4px 4px 3px rgba(0, 0, 0, 0.8),
+                 6px 6px 5px rgba(0, 0, 0, 0.9);
+}
+li:hover{
+    text-shadow: none;
+}
+

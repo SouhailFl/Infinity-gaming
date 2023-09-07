@@ -1,0 +1,99 @@
+/* First Picking my colors */
+:root{
+    --text : #fcfbfe ;
+    --pb : #7837d3;
+    --sb : #46a6fa;
+    --acc :#4df7bd;
+}
+*{
+    /* background: linear-gradient(to right, #7837d3, #4df7bd); */
+    /* background: var(--bg); */
+    color: var(--text);
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(90deg, #080011,#252050, #39115f, #252050, #080011);
+}
+header{
+    background: linear-gradient(45deg,#080011, #290268,#513dff, #19115f, #252050, #350669,#513dff,#290268,#080011);
+    height: 110px;
+    margin-top: -12px;
+}
+footer{
+    background: linear-gradient(90deg, #080011,#252050, #39115f, #252050, #080011);
+}
+
+.little-margin{
+    margin-top: 50px;
+}
+nav{
+    height: 121px;
+    margin-left: -200px;
+    margin-right: 0;
+    
+}
+nav .container img{
+    width: 170px;
+}
+.nav-items{
+    padding-right: 70px;
+    font-weight: bold;
+    font-size: 19px;
+}
+.nav-items a:hover{
+    color: var(--acc);
+}
+nav .navbar-nav li a{
+    color: var(--text);
+}
+.navbar-icons{
+    margin-right: -150px;
+    font-size: 22px;
+    padding: 22px;
+    cursor: pointer;
+}
+.navbar-icons .fa-cart-plus{
+    padding: 10px;
+}
+.navbar-icons .fa-cart-plus:hover{
+    color: gold;
+}
+.navbar-icons .fa-right-to-bracket:hover{
+    color: var(--acc);
+}
+/* .navbar-icons .fa-cart-plus,.fa-right-to-bracket{
+    color: gold
+} */
+/* footer css */
+.custom-column {
+    margin-left: 100px; /* Adjust the margin as needed */
+}
+#about-us{
+    width: 200px;
+    margin-left: 1px;
+}
+footer{
+    background-color: var(--bg);
+}
+.container-fluid h5{
+    font-weight: bold;
+    color: var(--pb);
+}
+.list-unstyled a{
+    text-decoration: none;
+    color: var(--acc);
+    font-weight: bold;
+}
+.another-margin{
+    margin-top: 120px;
+}
+h1,h2,h3,h5,ul,i,p{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5),
+                 4px 4px 3px rgba(0, 0, 0, 0.8),
+                 6px 6px 5px rgba(0, 0, 0, 0.9);
+}
+li:hover{
+    text-shadow: none;
+}

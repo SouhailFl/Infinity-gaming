@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews Forum</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="forum.css">
+  <style>
+    .review-card {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <a href="homepage.html"><img src="images/Infinity.png" alt="logo"></a>
+            </a>
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-items">
+                    <a href="Trending.html" class="nav-link ">Trending</a>
+                </li>
+                <li class="nav-items">
+                    <a href="homepage.html" class="nav-link ">Bestsellers</a>
+                </li>
+                <li class="nav-items">
+                    <a href="homepage.html" class="nav-link ">Categories</a>
+                </li>
+                <li class="nav-items">
+                    <a href="forum.html" class="nav-link ">Reviews</a>
+                </li>
+            </ul>
+            <div class="navbar-icons">
+                <a href="panier.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="login.html"><i class="fa-sharp fa-solid fa-right-to-bracket"></i></a>
+            </div>
+        </div>
+    </nav>
+</header>
+  <div id="xxx" class="container">
+    <h1 class="text-center">Reviews Forum</h1>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <!-- Review Form -->
+        <form id="review-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <hr>
+        <!-- Review Cards -->
+        <div id="review-cards"></div>
+      </div>
+    </div>
+  </div>
+  <footer class="">
+    <hr>
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-md-2 custom-column">
+          <h5>About Us</h5>
+          <p id="about-us">A small developper Team yet ready to bring you the most interactive and aesthetically pleasing & appealing website.</p>
+        </div>
+        <div class="col-md-2 custom-column ">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 custom-column">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li>Email : souhailfellaki@gmail.com</li>
+            <li>Phone : +212704126294</li>
+            <li>Address : Hay al amal, Sale, Morocco</li>
+          </ul>
+        </div>
+        <div class="col-md-2 custom-column ">
+          <h5>Follow Us</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://web.facebook.com/souhail.fellaki" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/souhail_fellaki" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/souhail_fl" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/souhail-fellaki-1b1759262" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr style="color: bisque;">
+      <div class="text-center">
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="forum.js" ></script>
+  <script src="https://kit.fontawesome.com/d0472a7d07.js" crossorigin="anonymous"></script>
+</body>
+</html>
